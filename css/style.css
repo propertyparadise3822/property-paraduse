@@ -1,0 +1,1506 @@
+/* =========================================
+   PROPERTY PARADISE WEBSITE
+   MAIN STYLE SHEET
+========================================= */
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7f6;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.header {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 7%;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   BRAND + LOGO
+========================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+}
+
+.logo-image {
+    width: 58px;
+    height: 58px;
+
+    object-fit: contain;
+}
+
+.brand h2 {
+    color: #176b3a;
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.brand span {
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #1b7a43;
+}
+
+
+/* =========================================
+   NAV BUTTONS
+========================================= */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-btn,
+.register-btn {
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.login-btn {
+    color: #176b3a;
+
+    border: 2px solid #176b3a;
+
+    background: white;
+}
+
+.login-btn:hover {
+    background: #176b3a;
+    color: white;
+}
+
+.register-btn {
+    background: #176b3a;
+    color: white;
+
+    border: 2px solid #176b3a;
+}
+
+.register-btn:hover {
+    background: #0d4f29;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 130px 20px 70px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.60)
+        ),
+        url("../images/background/hero-house.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+
+/* =========================================
+   HERO OVERLAY
+========================================= */
+
+.hero-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.10);
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+    width: 100%;
+
+    max-width: 1200px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* SMALL TITLE */
+
+.hero-small-title {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    margin-bottom: 20px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    color: white;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* MAIN HEADING */
+
+.hero-content h1 {
+    color: white;
+
+    font-size: 58px;
+
+    line-height: 1.2;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        2px 3px 12px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 span {
+    display: block;
+
+    color: #d8f3df;
+}
+
+
+/* DESCRIPTION */
+
+.hero-description {
+    max-width: 750px;
+
+    margin: auto;
+
+    margin-bottom: 35px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    text-shadow:
+        1px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+/* =========================================
+   SEARCH BOX
+========================================= */
+
+.search-box {
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 15px;
+
+    text-align: left;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* SEARCH FIELD */
+
+.search-field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.search-field label {
+    color: #333;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.search-field label i {
+    color: #176b3a;
+
+    margin-right: 5px;
+}
+
+
+/* SELECT */
+
+.search-field select {
+    width: 100%;
+
+    padding: 13px 12px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+
+    background: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.search-field select:focus {
+    border-color: #176b3a;
+
+    box-shadow:
+        0 0 0 3px rgba(23, 107, 58, 0.12);
+}
+
+
+/* SEARCH BUTTON */
+
+.search-btn {
+    border: none;
+
+    border-radius: 8px;
+
+    background: #176b3a;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    padding: 13px;
+
+    margin-top: 25px;
+
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #0c4d27;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO BOTTOM TEXT
+========================================= */
+
+.hero-bottom-text {
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.hero-bottom-text i {
+    color: #9ff0b8;
+
+    margin-right: 6px;
+}
+
+
+/* =========================================
+   COMMON SECTION HEADING
+========================================= */
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-heading p {
+    color: #176b3a;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+
+    color: #222;
+
+    line-height: 1.3;
+}
+
+.section-heading h2 span {
+    color: #176b3a;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+    padding: 90px 8%;
+
+    background: white;
+}
+
+.about-content {
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.about-text h3 {
+    font-size: 30px;
+
+    color: #222;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ABOUT STATS */
+
+.about-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.stat-card {
+    background: #f3faf5;
+
+    border-radius: 12px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    border: 1px solid #dceee1;
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.stat-card i {
+    font-size: 28px;
+
+    color: #176b3a;
+
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    font-size: 25px;
+
+    color: #222;
+}
+
+.stat-card p {
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   CATEGORIES
+========================================= */
+
+.categories {
+    padding: 90px 8%;
+
+    background: #f6f8f7;
+}
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+.category-card {
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-card i {
+    font-size: 35px;
+
+    color: #176b3a;
+
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   PROPERTIES SECTION
+========================================= */
+
+.properties-section {
+    padding: 90px 8%;
+
+    background: white;
+}
+
+.property-count {
+    text-align: center;
+
+    color: #176b3a;
+
+    font-weight: bold;
+
+    margin-top: -25px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   PROPERTY GRID
+========================================= */
+
+.property-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   PROPERTY CARD
+========================================= */
+
+.property-card {
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.property-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================
+   PROPERTY IMAGE - FIXED PROPORTION
+========================================= */
+
+.property-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #111;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: none;
+}
+
+.property-card:hover .property-image img {
+    transform: none;
+}
+
+/* PROPERTY TAG */
+
+.property-tag {
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    background: #176b3a;
+
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* PROPERTY INFO */
+
+.property-info {
+    padding: 20px;
+}
+
+.property-info h3 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+.location {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.location i {
+    color: #176b3a;
+
+    margin-right: 5px;
+}
+
+
+/* DETAILS */
+
+.details {
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+.details span {
+    background: #f1f7f3;
+
+    color: #176b3a;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* PRICE */
+
+.property-info h4 {
+    font-size: 22px;
+
+    color: #176b3a;
+
+    margin-bottom: 15px;
+}
+
+.property-info h4 small {
+    font-size: 12px;
+
+    color: #888;
+
+    font-weight: normal;
+}
+
+
+/* VIEW DETAILS BUTTON */
+
+.property-info a {
+    display: block;
+
+    text-align: center;
+
+    padding: 11px;
+
+    border-radius: 7px;
+
+    background: #176b3a;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.property-info a:hover {
+    background: #0c4d27;
+}
+
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.why-section {
+    padding: 90px 8%;
+
+    background: #f4f8f5;
+}
+
+.why-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.why-card {
+    background: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.why-card:hover {
+    transform: translateY(-7px);
+}
+
+.why-card i {
+    font-size: 38px;
+
+    color: #176b3a;
+
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+.why-card p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #102d1b;
+
+    color: white;
+
+    padding-top: 60px;
+}
+
+.footer-container {
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 0 8% 45px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 35px;
+}
+
+.footer-column h2 {
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+.footer-column h3 {
+    margin-bottom: 18px;
+
+    color: #bde8c9;
+}
+
+.footer-column p {
+    color: #d0d8d3;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    display: block;
+
+    color: #d0d8d3;
+
+    text-decoration: none;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #8de5aa;
+}
+
+.footer-bottom {
+    border-top:
+        1px solid rgba(255, 255, 255, 0.15);
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: #bbb;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding: 10px 4%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .search-box {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .search-btn {
+        margin-top: 0;
+    }
+
+    .category-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns:
+            1fr;
+    }
+
+    .footer-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        position: relative;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+
+        font-size: 13px;
+    }
+
+    .nav-buttons {
+        margin-bottom: 5px;
+    }
+
+    .hero {
+        padding-top: 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .search-box {
+        grid-template-columns:
+            1fr;
+
+        padding: 18px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .category-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .about-stats {
+        grid-template-columns:
+            1fr;
+    }
+
+    .why-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .footer-container {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+/* =========================================
+   PROPERTY PARADISE - FINAL LUXURY THEME
+   DESIGN ONLY - FUNCTIONALITY UNCHANGED
+========================================= */
+
+:root {
+    --gold: #d4af37;
+    --gold-light: #f0d77a;
+    --luxury-black: #080d12;
+    --luxury-navy: #101820;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    min-height: 80px !important;
+    z-index: 99999 !important;
+    background: linear-gradient(90deg, #080d12 0%, #121820 50%, #080d12 100%) !important;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.45) !important;
+    box-shadow: 0 4px 22px rgba(0, 0, 0, 0.45) !important;
+}
+
+.navbar .brand h2 { color: var(--gold-light) !important; }
+.navbar .brand span { color: #dddddd !important; }
+
+.navbar .nav-links a {
+    color: var(--gold-light) !important;
+    -webkit-text-fill-color: var(--gold-light) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.navbar .login-btn {
+    color: var(--gold-light) !important;
+    -webkit-text-fill-color: var(--gold-light) !important;
+    background: transparent !important;
+    border: 1px solid var(--gold) !important;
+}
+.navbar .login-btn:hover {
+    background: var(--gold) !important;
+    color: #111111 !important;
+    -webkit-text-fill-color: #111111 !important;
+}
+.navbar .register-btn {
+    background: var(--gold) !important;
+    color: #111111 !important;
+    -webkit-text-fill-color: #111111 !important;
+    border: 1px solid var(--gold) !important;
+}
+.navbar .register-btn:hover { background: var(--gold-light) !important; }
+
+.navbar .logo-image {
+    width: 62px !important;
+    height: 62px !important;
+    object-fit: contain !important;
+    border-radius: 10px !important;
+}
+
+/* HERO */
+.hero {
+    position: relative !important;
+    min-height: 100vh !important;
+    width: 100% !important;
+    background-image: linear-gradient(rgba(4, 8, 12, 0.58), rgba(4, 8, 12, 0.72)), url("../images/background/hero-house.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding-top: 150px !important;
+}
+.hero-content {
+    position: relative !important;
+    z-index: 3 !important;
+    text-align: left !important;
+}
+.hero-overlay { background: rgba(0, 0, 0, 0.10) !important; }
+.hero-small-title {
+    color: var(--gold-light) !important;
+    background: rgba(20, 18, 10, 0.75) !important;
+    border-color: rgba(212, 175, 55, 0.65) !important;
+}
+.hero-content h1 {
+    color: #ffffff !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+}
+.hero-content h1 span,
+.hero-content h1 .highlight { color: var(--gold-light) !important; }
+.hero-description,
+.hero-content p { color: #f2f2f2 !important; }
+
+/* SEARCH */
+.search-box {
+    position: relative !important;
+    z-index: 5 !important;
+    background: rgba(255, 255, 255, 0.97) !important;
+    border: 1px solid rgba(212, 175, 55, 0.35) !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), 0 0 25px rgba(212, 175, 55, 0.10) !important;
+}
+.search-field label i { color: var(--gold) !important; }
+.search-field select:focus {
+    border-color: var(--gold) !important;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12) !important;
+}
+.search-btn {
+    background: #080808 !important;
+    color: var(--gold-light) !important;
+    border: 1px solid var(--gold) !important;
+}
+.search-btn:hover {
+    background: var(--gold) !important;
+    color: #111111 !important;
+}
+
+/* HERO FEATURES */
+.hero-bottom-text { color: #ffffff !important; }
+.hero-bottom-text i { color: var(--gold) !important; }
+.hero-bottom-text strong,
+.hero-bottom-text h4 { color: var(--gold-light) !important; }
+
+/* SECTION HEADINGS */
+.section-heading p { color: var(--gold) !important; }
+.section-heading h2 { color: #222222 !important; }
+.section-heading h2 span { color: var(--gold) !important; }
+
+/* ABOUT / CATEGORIES / WHY */
+.stat-card { border-color: rgba(212, 175, 55, 0.30) !important; }
+.stat-card i { color: var(--gold) !important; }
+.category-card i,
+.category-icon { color: var(--gold) !important; }
+.category-card:hover { border-color: var(--gold) !important; }
+.why-card i,
+.why-icon { color: var(--gold) !important; }
+
+/* PROPERTIES */
+.property-count,
+#propertyCount { color: var(--gold) !important; }
+.property-card { border: 1px solid rgba(212, 175, 55, 0.20) !important; }
+.property-card:hover { border-color: rgba(212, 175, 55, 0.65) !important; }
+.property-tag {
+    background: var(--gold) !important;
+    color: #111111 !important;
+}
+.location i { color: var(--gold) !important; }
+.property-info h4,
+.property-card .property-info h4 { color: var(--gold) !important; }
+
+.property-card .details span {
+    color: #555555 !important;
+    background: #f5f2e8 !important;
+}
+
+.property-card .property-info a,
+.property-info a {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 11px !important;
+    border-radius: 7px !important;
+    background: #111111 !important;
+    color: var(--gold-light) !important;
+    -webkit-text-fill-color: var(--gold-light) !important;
+    border: 1px solid var(--gold) !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    transition: 0.3s !important;
+}
+.property-card .property-info a:hover,
+.property-info a:hover {
+    background: var(--gold) !important;
+    color: #111111 !important;
+    -webkit-text-fill-color: #111111 !important;
+}
+
+/* FOOTER */
+footer { background: #080d12 !important; }
+footer h3,
+footer h4 { color: var(--gold-light) !important; }
+.footer-column a:hover { color: var(--gold-light) !important; }
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .navbar {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        background: #080d12 !important;
+    }
+    .hero { padding-top: 100px !important; }
+}
+
+
+
+
+
+
+/* HOME NAVBAR ACTIVE + HOVER FIX */
+.navbar .nav-links a:first-child {
+    color: #d4af37 !important;
+    -webkit-text-fill-color: #d4af37 !important;
+}
+
+.navbar .nav-links a:first-child:hover {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* All other navbar links */
+.navbar .nav-links a:not(:first-child) {
+    color: #f0d77a !important;
+    -webkit-text-fill-color: #f0d77a !important;
+}
+
+.navbar .nav-links a:not(:first-child):hover {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+
+
+
+
+/* =========================================
+   PROPERTY IMAGE - FIXED PROPORTION
+========================================= */
+
+.property-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #111;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: none;
+}
+
+.property-card:hover .property-image img {
+    transform: none;
+}
+
+
+/* =========================================
+   PROPERTY CARD - EQUAL HEIGHT
+========================================= */
+
+.property-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-card .property-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-card .property-info a {
+    margin-top: auto;
+}
+
+
+
+/* =========================================
+   PROPERTY CARD IMAGE - CONSISTENT DISPLAY
+========================================= */
+
+.property-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #111;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+    transform: none !important;
+    image-rendering: auto;
+}
+
+.property-card:hover .property-image img {
+    transform: none !important;
+}
+
+
+/* =========================================
+   FINAL PROPERTY IMAGE FIX
+   FULL IMAGE - NO UNNECESSARY ZOOM/CROP
+========================================= */
+
+/* PROPERTY CARD IMAGE BOX */
+.property-image {
+    width: 100% !important;
+    height: 220px !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* PROPERTY CARD IMAGE */
+.property-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: center !important;
+
+    display: block !important;
+
+    transform: none !important;
+}
+
+/* REMOVE HOVER ZOOM */
+.property-card:hover .property-image img {
+    transform: none !important;
+}
+
+
+/* =========================================
+   VIEW DETAILS IMAGE FIX
+========================================= */
+
+.details-image {
+    width: 100% !important;
+    height: 450px !important;
+
+    overflow: hidden !important;
+
+    background: #ffffff !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.details-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: center !important;
+
+    display: block !important;
+
+    transform: none !important;
+}
+
+.property-name {
+    margin: 8px 0 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #b28a3e;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    letter-spacing: 0.2px;
+}
+
+.property-name i {
+    font-size: 13px;
+    color: #c7a06a;
+}
+
+.property-name + .location {
+    margin-top: 0;
+}
+

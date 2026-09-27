@@ -1,0 +1,2303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Property Paradise | Find Your Perfect Rental Home</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="brand">
+
+                <img src="images/logo/logo.jpeg"
+                     alt="Property Paradise Logo"
+                     class="logo-image">
+
+                <div>
+                    <h2>Property Paradise</h2>
+                    <span>Find Your Perfect Home</span>
+                </div>
+
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+
+                <li>
+                    <a href="#categories">Categories</a>
+                </li>
+
+
+                <li>
+                    <a href="#properties">Properties</a>
+                </li>
+
+               
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-buttons">
+
+                <a href="pages/login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="pages/register.html" class="register-btn">
+                    Register
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+
+        <div class="hero-content">
+
+            <p class="hero-small-title">
+                <i class="fa-solid fa-house"></i>
+                WELCOME TO PROPERTY PARADISE
+            </p>
+
+
+            <h1>
+                Find More Than a House.
+                <span>Find Your Paradise.</span>
+            </h1>
+
+
+            <p class="hero-description">
+
+                Discover beautiful rental homes across Ahmedabad.
+                From affordable rooms to luxurious duplexes,
+                your perfect place is waiting for you.
+
+            </p>
+
+
+            <!-- SEARCH BOX -->
+
+            <div class="search-box">
+
+
+                <!-- REGION -->
+
+                <div class="search-field">
+
+                    <label>
+                        <i class="fa-solid fa-map"></i>
+                        Select Region
+                    </label>
+
+                    <select id="regionSelect">
+
+                        <option value="">All Regions</option>
+
+                        <option value="North">North</option>
+
+                        <option value="South">South</option>
+
+                        <option value="West">West</option>
+
+                        <option value="East">East</option>
+
+                        <option value="Central">Central / Old City</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="search-field">
+
+                    <label>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Select Location
+                    </label>
+
+                    <select id="areaSelect">
+
+                        <option value="">All Locations</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PROPERTY TYPE -->
+
+                <div class="search-field">
+
+                    <label>
+                        <i class="fa-solid fa-building"></i>
+                        Property Type
+                    </label>
+
+                    <select id="typeSelect">
+
+                        <option value="">All Properties</option>
+
+                        <option value="Apartment">Apartment</option>
+
+                        <option value="Duplex">Duplex</option>
+
+                        <option value="Triplex">Triplex</option>
+
+                        <option value="Room">Room</option>
+
+                        <option value="Tenement">Tenement</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BUDGET -->
+
+                <div class="search-field">
+
+                    <label>
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        Monthly Rent
+                    </label>
+
+                    <select id="budgetSelect">
+
+                        <option value="">Any Budget</option>
+
+                        <option value="low">
+                            ₹10,000 - ₹15,000
+                        </option>
+
+                        <option value="medium">
+                            ₹15,000 - ₹20,000
+                        </option>
+
+                        <option value="high">
+                            ₹20,000 - ₹25,000
+                        </option>
+
+                        <option value="high">
+                            ₹25,000 - ₹30,000
+                        </option>
+
+                        <option value="high">
+                            ₹30,000 - ₹35,000
+                        </option>
+
+                        <option value="high">
+                            ₹35,000 - ₹40,000
+                        </option>
+
+                        <option value="high">
+                            ₹40,000 - ₹45,000
+                        </option>
+
+                        
+
+
+
+
+
+                    </select>
+
+                </div>
+
+
+                <!-- SEARCH BUTTON -->
+
+                <button id="searchButton" class="search-btn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Search
+
+                </button>
+
+            </div>
+
+
+            <div class="hero-bottom-text">
+
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Verified Rental Properties
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Trusted Locations
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Homes For Every Budget
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="section-heading">
+
+            <p>WELCOME HOME</p>
+
+            <h2>
+                A Better Way To Find
+                <span>Your Rental Home</span>
+            </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <h3>
+                    Your Trusted Property Partner
+                    in Ahmedabad
+                </h3>
+
+                <p>
+
+                    Property Paradise makes finding a rental home
+                    simple, comfortable and reliable.
+
+                    Explore apartments, duplexes, triplexes,
+                    rooms and tenements across Ahmedabad.
+
+                </p>
+
+                <p>
+
+                    Whether you are looking for an affordable home,
+                    a comfortable family apartment or a premium
+                    luxury property, we help you discover the
+                    right place for your lifestyle.
+
+                </p>
+
+            </div>
+
+
+            <div class="about-stats">
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <h3>35+</h3>
+
+                    <p>Rental Properties</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h3>40+</h3>
+
+                    <p>Ahmedabad Locations</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-building"></i>
+
+                    <h3>5</h3>
+
+                    <p>Property Types</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories" id="categories">
+
+        <div class="section-heading">
+
+            <p>EXPLORE PROPERTY TYPES</p>
+
+            <h2>
+                Find The Home
+                <span>You Need</span>
+            </h2>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-building"></i>
+
+                <h3>Apartment</h3>
+
+                <p>
+                    Comfortable apartments for individuals
+                    and families.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-house"></i>
+
+                <h3>Duplex</h3>
+
+                <p>
+                    Spacious modern homes with
+                    premium facilities.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-city"></i>
+
+                <h3>Triplex</h3>
+
+                <p>
+                    Large premium homes for
+                    bigger families.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-bed"></i>
+
+                <h3>Room</h3>
+
+                <p>
+                    Affordable rooms for students
+                    and working professionals.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-house-chimney"></i>
+
+                <h3>Tenement</h3>
+
+                <p>
+                    Budget-friendly independent homes
+                    for families.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROPERTIES ================= -->
+
+    <section class="properties-section" id="properties">
+
+        <div class="section-heading">
+
+            <p>EXPLORE AHMEDABAD</p>
+
+            <h2>
+                Featured
+                <span>Rental Properties</span>
+            </h2>
+
+        </div>
+
+
+        <p id="propertyCount" class="property-count">
+            35 Properties Available
+        </p>
+
+
+        <div class="property-grid">
+
+
+            <!-- ================= NORTH ================= -->
+
+
+            <!-- PROPERTY 01 -->
+
+            <div class="property-card"
+                 data-region="North"
+                 data-area="Sabarmati"
+                 data-type="Apartment"
+                 data-price="18000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-01.jpg"
+                         alt="Apartment in Sabarmati">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Modern Family Apartment</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Sabarmati Serenity Heights
+                   </p>
+
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Sabarmati, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>
+                    </div>
+
+                    <h4>₹18,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=01">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 02 -->
+
+            <div class="property-card"
+                 data-region="North"
+                 data-area="Ranip"
+                 data-type="Tenement"
+                 data-price="12000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-02.jpg"
+                         alt="Tenement in Ranip">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Comfortable Family Tenement</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Ranip Royal Enclave
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ranip, Ahmedabad
+                    </p>
+
+                    
+                    <div class="details">
+                        <span>2 BHK </span>    
+                    </div>
+
+                    <h4>₹12,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=02">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 03 -->
+
+            <div class="property-card"
+                 data-region="North"
+                 data-area="Motera"
+                 data-type="Duplex"
+                 data-price="28000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-03.jpg"
+                         alt="Duplex in Motera">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Premium Duplex Home</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Motera Grand Vista
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Motera, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span> 
+                    </div>
+
+                    <h4>₹25,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=03">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 04 -->
+
+            <div class="property-card"
+                 data-region="North"
+                 data-area="Meghaninagar"
+                 data-type="Room"
+                 data-price="7000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-04.jpg"
+                         alt="Room in Meghaninagar">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Affordable Private Room</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Meghaninagar Cozy Nest
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Meghaninagar, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>1 BHK </span>
+                    </div>
+
+                    <h4>₹10,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=04">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 05 -->
+
+            <div class="property-card"
+                 data-region="North"
+                 data-area="Chandkheda"
+                 data-type="Apartment"
+                 data-price="22000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-05.jpg"
+                         alt="Apartment in Chandkheda">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Premium Apartment</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Chandkheda Elite Residency
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Chandkheda, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span>
+                    </div>
+
+                    <h4>₹26,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=05">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= SOUTH ================= -->
+
+
+            <!-- PROPERTY 06 -->
+
+            <div class="property-card"
+                 data-region="South"
+                 data-area="Maninagar"
+                 data-type="Apartment"
+                 data-price="16000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-06.jpg"
+                         alt="Apartment in Maninagar">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Comfortable City Apartment</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                         Maninagar Urban Heights
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Maninagar, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>                      
+                    </div>
+
+                    <h4>₹22,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=06">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 07 -->
+
+            <div class="property-card"
+                 data-region="South"
+                 data-area="Kankaria"
+                 data-type="Duplex"
+                 data-price="32000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-07.jpg"
+                         alt="Duplex in Kankaria">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Luxury Duplex Residence</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Kankaria Royal Haven 
+                        
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Kankaria, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span>                    
+                    </div>
+
+                    <h4>₹32,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=07">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 08 -->
+
+            <div class="property-card"
+                 data-region="South"
+                 data-area="Narol"
+                 data-type="Tenement"
+                 data-price="10000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-08.jpg"
+                         alt="Tenement in Narol">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Budget Friendly Home</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                       Narol Harmony Homes
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Narol, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>
+                    </div>
+
+                    <h4>₹17,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=08">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 09 -->
+
+            <div class="property-card"
+                 data-region="South"
+                 data-area="Lambha"
+                 data-type="Room"
+                 data-price="6500">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-09.jpg"
+                         alt="Room in Lambha">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Affordable Rental Room</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Lambha Cozy Corner
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Lambha, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>1 BHK </span>                       
+                    </div>
+
+                    <h4>₹9,500 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=09">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 10 -->
+
+            <div class="property-card"
+                 data-region="South"
+                 data-area="Ishanpur"
+                 data-type="Triplex"
+                 data-price="40000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-10.jpg"
+                         alt="Triplex in Ishanpur">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Luxury Triplex </h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Ishanpur Grand Vista
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ishanpur, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>4 BHK </span>                       
+                    </div>
+
+                    <h4>₹40,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=10">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= WEST ================= -->
+
+
+            <!-- PROPERTY 11 -->
+
+            <div class="property-card"
+                 data-region="West"
+                 data-area="Satellite"
+                 data-type="Apartment"
+                 data-price="25000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-11.jpg"
+                         alt="Apartment in Satellite">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Luxury City Apartment</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Satellite Luxe Heights
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Satellite, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span>
+                    </div>
+
+                    <h4>₹32,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=11">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 12 -->
+
+            <div class="property-card"
+                 data-region="West"
+                 data-area="Vastrapur"
+                 data-type="Duplex"
+                 data-price="35000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-12.jpg"
+                         alt="Duplex in Vastrapur">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Elegant Luxury Duplex</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Vastrapur Elegant Haven
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Vastrapur, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span>
+                    </div>
+
+                    <h4>₹35,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=12">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 13 -->
+
+            <div class="property-card"
+                 data-region="West"
+                 data-area="Prahladnagar"
+                 data-type="Apartment"
+                 data-price="30000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-13.jpg"
+                         alt="Apartment in Prahladnagar">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Premium Residence Apartment</h3>
+                 
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Prahladnagar Prestige Heights
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Prahladnagar, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span>                       
+                    </div>
+
+                    <h4>₹29,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=13">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+  
+            <!-- PROPERTY 14 -->
+
+            <div class="property-card"
+                 data-region="West"
+                 data-area="Thaltej"
+                 data-type="Triplex"
+                 data-price="55000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-14.jpg"
+                         alt="Triplex in Thaltej">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Grand Luxury Triplex</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                       Thaltej Grand Royale
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Thaltej, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>4 BHK </span>                        
+                    </div>
+
+                    <h4>₹46,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=14">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 15 -->
+
+            <div class="property-card"
+                 data-region="West"
+                 data-area="Bopal"
+                 data-type="Tenement"
+                 data-price="18000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-15.jpg"
+                         alt="Tenement in Bopal">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Modern Family Tenement</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                       Bopal Green Vista
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Bopal, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>                      
+                    </div>
+
+                    <h4>₹25,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=15">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 16 -->
+
+            <div class="property-card"
+                 data-region="West"
+                 data-area="Navrangpura"
+                 data-type="Room"
+                 data-price="9000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-16.jpg"
+                         alt="Room in Navrangpura">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Student Friendly Room</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Navrangpura Urban Nest
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Navrangpura, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>1 BHK </span>                      
+                    </div>
+
+                    <h4>₹9,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=16">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 17 -->
+
+            <div class="property-card"
+                 data-region="West"
+                 data-area="Science City"
+                 data-type="Apartment"
+                 data-price="27000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-17.jpg"
+                         alt="Apartment in Science City">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Premium Smart Apartment</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Science City Smart Heights
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Science City, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span>                       
+                    </div>
+
+                    <h4>₹29,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=17">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= EAST ================= -->
+
+
+            <!-- PROPERTY 18 -->
+
+            <div class="property-card"
+                 data-region="East"
+                 data-area="Naroda"
+                 data-type="Apartment"
+                 data-price="14000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-18.jpg"
+                         alt="Apartment in Naroda">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Affordable Family Apartment</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Naroda Harmony Residency
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Naroda, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>                       
+                    </div>
+
+                    <h4>₹14,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=18">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 19 -->
+
+            <div class="property-card"
+                 data-region="East"
+                 data-area="Nikol"
+                 data-type="Duplex"
+                 data-price="24000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-19.jpg"
+                         alt="Duplex in Nikol">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Spacious Duplex Home</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Nikol Grand Duplex
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Nikol, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span>                      
+                    </div>
+
+                    <h4>₹22,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=19">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 20 -->
+
+            <div class="property-card"
+                 data-region="East"
+                 data-area="Vastral"
+                 data-type="Tenement"
+                 data-price="11000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-20.jpg"
+                         alt="Tenement in Vastral">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Budget Friendly Tenement</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Vastral Harmony Enclave
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Vastral, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>                        
+                    </div>
+
+                    <h4>₹16,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=20">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 21 -->
+
+            <div class="property-card"
+                 data-region="East"
+                 data-area="Odhav"
+                 data-type="Room"
+                 data-price="6000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-21.jpg"
+                         alt="Room in Odhav">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Simple Rental Room</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Odhav Cozy Haven
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Odhav, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>1 BHK </span>                       
+                    </div>
+
+                    <h4>₹6,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=21">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 22 -->
+
+            <div class="property-card"
+                 data-region="East"
+                 data-area="Bapunagar"
+                 data-type="Triplex"
+                 data-price="38000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-22.jpg"
+                         alt="Triplex in Bapunagar">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Premium Family Triplex</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Bapunagar Royal Vista
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Bapunagar, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>4 BHK </span>                       
+                    </div>
+
+                    <h4>₹38,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=22">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 23 -->
+
+            <div class="property-card"
+                 data-region="East"
+                 data-area="Viratnagar"
+                 data-type="Apartment"
+                 data-price="17000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-23.jpg"
+                         alt="Apartment in Viratnagar">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Modern Residential Apartment</h3>
+                     
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                       Viratnagar Modern Heights
+                   </p>
+
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Viratnagar, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>                      
+                    </div>
+
+                    <h4>₹22,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=23">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= CENTRAL ================= -->
+
+
+            <!-- PROPERTY 24 -->
+
+            <div class="property-card"
+                 data-region="Central"
+                 data-area="Kalupur"
+                 data-type="Room"
+                 data-price="5500">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-24.jpg"
+                         alt="Room in Kalupur">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Affordable City Room</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Kalupur City Nest
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Kalupur, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>1 BHK </span>                       
+                    </div>
+
+                    <h4>₹12,500 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=24">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 25 -->
+
+            <div class="property-card"
+                 data-region="Central"
+                 data-area="Lal Darwaja"
+                 data-type="Apartment"
+                 data-price="15000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-25.jpg"
+                         alt="Apartment in Lal Darwaja">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Central City Apartment</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                       Lal Darwaja Central Vista
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Lal Darwaja, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>                       
+                    </div>
+
+                    <h4>₹19,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=25">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 26 -->
+
+            <div class="property-card"
+                 data-region="Central"
+                 data-area="Raipur"
+                 data-type="Tenement"
+                 data-price="13000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-26.jpg"
+                         alt="Tenement in Raipur">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Comfortable Family Home</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                       Raipur Heritage Haven
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Raipur, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>
+                    </div>
+
+                    <h4>₹15,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=26">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 27 -->
+
+            <div class="property-card"
+                 data-region="Central"
+                 data-area="Khanpur"
+                 data-type="Duplex"
+                 data-price="26000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-27.jpg"
+                         alt="Duplex in Khanpur">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Classic Modern Duplex</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Khanpur Classic Royale
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Khanpur, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span>
+                    </div>
+
+                    <h4>₹28,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=27">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 28 -->
+
+            <div class="property-card"
+                 data-region="Central"
+                 data-area="Teen Darwaja"
+                 data-type="Room"
+                 data-price="7000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-28.jpg"
+                         alt="Room in Teen Darwaja">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Convenient City Room</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Teen Darwaja Urban Nest
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Teen Darwaja, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>1 BHK </span>                       
+                    </div>
+
+                    <h4>₹9,800 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=28">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= EXTRA PROPERTIES ================= -->
+
+
+            <!-- PROPERTY 29 -->
+
+            <div class="property-card"
+                 data-region="North"
+                 data-area="Shahibaug"
+                 data-type="Triplex"
+                 data-price="48000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-29.jpg"
+                         alt="Triplex in Shahibaug">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Royal Family Triplex</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Shahibaug Royal Vista
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Shahibaug, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>4 BHK </span>                       
+                    </div>
+
+                    <h4>₹41,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=29">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 30 -->
+
+            <div class="property-card"
+                 data-region="South"
+                 data-area="Jamalpur"
+                 data-type="Apartment"
+                 data-price="14000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-30.jpg"
+                         alt="Apartment in Jamalpur">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Modern Budget Apartment</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Jamalpur Urban Heights
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Jamalpur, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>
+                    </div>
+
+                    <h4>₹26,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=30">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 31 -->
+
+            <div class="property-card"
+                 data-region="West"
+                 data-area="Gota"
+                 data-type="Tenement"
+                 data-price="16000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-31.jpg"
+                         alt="Tenement in Gota">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Independent Family Home</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Gota Green Enclave
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Gota, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>                       
+                    </div>
+
+                    <h4>₹20,500 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=31">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 32 -->
+
+            <div class="property-card"
+                 data-region="East"
+                 data-area="Thakkarnagar"
+                 data-type="Duplex"
+                 data-price="23000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-32.jpg"
+                         alt="Duplex in Thakkarnagar">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Spacious Modern Duplex</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Thakkarnagar Grand Duplex
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Thakkarnagar, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span>                       
+                    </div>
+
+                    <h4>₹24,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=32">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 33 -->
+
+            <div class="property-card"
+                 data-region="West"
+                 data-area="South Bopal"
+                 data-type="Apartment"
+                 data-price="23000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-33.jpg"
+                         alt="Apartment in South Bopal">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Contemporary Family Apartment</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                       South Bopal Elite Heights
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        South Bopal, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>3 BHK </span>
+                    </div>
+
+                    <h4>₹23,000 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=33">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 34 -->
+
+            <div class="property-card"
+                 data-region="North"
+                 data-area="Nava Vadaj"
+                 data-type="Tenement"
+                 data-price="11000">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-34.jpg"
+                         alt="Tenement in Nava Vadaj">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Affordable Independent Home</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Nava Vadaj Harmony Homes
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Nava Vadaj, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>2 BHK </span>                       
+                    </div>
+
+                    <h4>₹22,850 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=34">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 35 -->
+
+            <div class="property-card"
+                 data-region="South"
+                 data-area="Behrampura"
+                 data-type="Room"
+                 data-price="7500">
+
+                <div class="property-image">
+
+                    <img src="images/properties/property-35.jpg"
+                         alt="Room in Behrampura">
+
+                    <span class="property-tag">For Rent</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <h3>Comfortable Private Room</h3>
+
+                    <p class="property-name">
+                       <i class="fa-solid fa-house"></i>
+                        Behrampura Cozy Residency
+                   </p>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Behrampura, Ahmedabad
+                    </p>
+
+                    <div class="details">
+                        <span>1 3 BHK</span>                        
+                    </div>
+
+                    <h4>₹9,500 <small>/ Month</small></h4>
+
+                    <a href="pages/property-details.html?id=35">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="why-section">
+
+        <div class="section-heading">
+
+            <p>WHY PROPERTY PARADISE?</p>
+
+            <h2>
+                Your Home Search,
+                <span>Made Simple</span>
+            </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-house-circle-check"></i>
+
+                <h3>Verified Properties</h3>
+
+                <p>
+                    Discover reliable rental properties
+                    with complete information.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                <h3>Every Budget</h3>
+
+                <p>
+                    From affordable rooms to
+                    premium luxury homes.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-map-location-dot"></i>
+
+                <h3>Best Locations</h3>
+
+                <p>
+                    Explore popular locations
+                    across Ahmedabad.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>Easy Support</h3>
+
+                <p>
+                    We make your property
+                    search simple and comfortable.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <div class="footer-container">
+
+
+            <div class="footer-column">
+
+                <h2>Property Paradise</h2>
+
+                <p>
+
+                    Find your perfect rental home
+                    across Ahmedabad.
+
+                    Comfort, convenience and your
+                    dream home — all in one place.
+
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="#properties">Properties</a>
+
+                <a href="#categories">Categories</a>
+
+                <a href="#about">About Us</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Ahmedabad, Gujarat
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    propertyparadise3822@gmail.com
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Admin Portal</h3>
+
+                <a href="pages/admin-login.html">
+                    Admin Login
+                </a>
+
+                <a href="pages/admin-register.html">
+                    Admin Registration
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Property Paradise |
+                All Rights Reserved
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

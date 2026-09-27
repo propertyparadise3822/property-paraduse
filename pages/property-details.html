@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Property Details | Property Paradise</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .details-page {
+            min-height: 100vh;
+            padding: 130px 8% 70px;
+            background: #f5f7f6;
+        }
+
+        .details-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 25px;
+            padding: 10px 18px;
+            border-radius: 7px;
+            background: #111;
+            color: #f0d77a;
+            border: 1px solid #d4af37;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background: #d4af37;
+            color: #111;
+        }
+
+        .details-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid rgba(212,175,55,.45);
+            box-shadow: 0 15px 40px rgba(0,0,0,.12);
+        }
+
+        .details-image {
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            background: #eee;
+        }
+
+        .details-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .details-content {
+            padding: 35px;
+        }
+
+        .details-tag {
+            display: inline-block;
+            padding: 7px 14px;
+            background: #d4af37;
+            color: #111;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .details-content h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 36px;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .details-location {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .details-price {
+            color: #b08b16;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .details-price small {
+            font-size: 14px;
+            color: #777;
+            font-weight: normal;
+        }
+
+        .details-features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .feature-box {
+            background: #f5f2e8;
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature-box strong {
+            display: block;
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .feature-box span {
+            color: #777;
+            font-size: 13px;
+        }
+
+        .description-box {
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+        }
+
+        .description-box h2 {
+            margin-bottom: 12px;
+            color: #222;
+        }
+
+        .description-box p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .facility-box {
+            margin-top: 25px;
+        }
+
+        .facility-box h2 {
+            margin-bottom: 15px;
+        }
+
+        .facility-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .facility-list span {
+            padding: 8px 13px;
+            background: #f1f7f3;
+            color: #176b3a;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        @media(max-width:700px) {
+
+            .details-page {
+                padding: 110px 5% 50px;
+            }
+
+            .details-image {
+                height: 280px;
+            }
+
+            .details-content {
+                padding: 25px;
+            }
+
+            .details-content h1 {
+                font-size: 28px;
+            }
+
+            .details-features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="details-page">
+
+    <div class="details-container">
+        
+
+        <a href="../index.html#properties" class="back-button">
+           ← Back to Properties
+        </a>
+
+        <div class="details-card">
+
+            <div class="details-image">
+                <img id="propertyImage" src="" alt="Property Image">
+            </div>
+
+            <div class="details-content">
+
+                <span class="details-tag" id="propertyType"></span>
+
+                <h1 id="propertyTitle"></h1>
+
+                <p class="details-location" id="propertyLocation"></p>
+
+                <div class="details-price" id="propertyPrice"></div>
+
+                <div class="details-features">
+
+                    <div class="feature-box">
+                        <strong id="propertyBHK"></strong>
+                        <span>BHK</span>
+                    </div>
+
+                    <div class="feature-box">
+                        <strong id="propertyBeds"></strong>
+                        <span>Beds</span>
+                    </div>
+
+                    <div class="feature-box">
+                        <strong id="propertyBaths"></strong>
+                        <span>Bathrooms</span>
+                    </div>
+
+                    <div class="feature-box">
+                        <strong id="propertyClass"></strong>
+                        <span>Category</span>
+                    </div>
+
+                </div>
+
+                <div class="description-box">
+
+                    <h2>Property Description</h2>
+
+                    <p id="propertyDescription"></p>
+
+                </div>
+
+               <div class="facility-box">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;">
+
+        <div>
+            <h2>Facilities & Features</h2>
+
+            <div class="facility-list" id="facilityList"></div>
+        </div>
+
+        <a href="#" class="back-button" style="margin-bottom: 0;">
+            Book Now
+        </a>
+
+    </div>
+
+</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+const properties = {
+
+    "01": {
+        type: "Apartment",
+        title: "Modern Family Apartment",
+        name: "Sabarmati Serenity Heights",
+        location: "Sabarmati, North Ahmedabad",
+        price: "₹18,000",
+        bhk: "2",
+        beds: "2",
+        baths: "2",
+        category: "Middle",
+        image: "../images/properties/property-01.jpg",
+        description: "A comfortable modern apartment suitable for a family. The property offers a practical layout, good living space and convenient city connectivity.",
+        facilities: ["Parking", "Security", "Lift", "Balcony", "Family Friendly"]
+    },
+
+    "02": {
+        type: "Tenement",
+        title: "Comfortable Family Tenement",
+        name: "Ranip Royal Enclave",
+        location: "Ranip, North Ahmedabad",
+        price: "₹12,000",
+        bhk: "2",
+        beds: "2",
+        baths: "1",
+        category: "Middle",
+        image: "../images/properties/property-02.jpg",
+        description: "A practical independent family home with comfortable rooms and useful everyday facilities.",
+        facilities: ["Parking", "Water Supply", "Family Area", "Independent Home"]
+    },
+
+    "03": {
+        type: "Duplex",
+        title: "Premium Duplex Home",
+        name: "Motera Grand Vista",
+        location: "Motera, North Ahmedabad",
+        price: "₹25,000",
+        bhk: "3",
+        beds: "3",
+        baths: "3",
+        category: "High",
+        image: "../images/properties/property-03.jpg",
+        description: "A premium two-level duplex home offering spacious family living areas, multiple bedrooms and modern facilities.",
+        facilities: ["Parking", "Balcony", "Garden", "Security", "Two Floors"]
+    },
+
+    "04": {
+        type: "Room",
+        title: "Affordable Private Room",
+        name: "Meghaninagar Cozy Nest",
+        location: "Meghaninagar, North Ahmedabad",
+        price: "₹10,000",
+        bhk: "1",
+        beds: "1",
+        baths: "1",
+        category: "Budget",
+        image: "../images/properties/property-04.jpg",
+        description: "An affordable private rental room suitable for students or working individuals looking for convenient accommodation.",
+        facilities: ["Private Room", "Attached Bathroom", "Water Supply"]
+    },
+
+    "05": {
+        type: "Apartment",
+        title: "Premium 3BHK Apartment",
+        name: "Chandkheda Elite Residency",
+        location: "Chandkheda, North Ahmedabad",
+        price: "₹26,000",
+        bhk: "3",
+        beds: "3",
+        baths: "2",
+        category: "Middle",
+        image: "../images/properties/property-05.jpg",
+        description: "A spacious 3BHK family apartment with a comfortable layout and modern residential facilities.",
+        facilities: ["Parking", "Lift", "Balcony", "Security"]
+    },
+
+    "06": {
+        type: "Apartment",
+        title: "Comfortable City Apartment",
+        name: "Maninagar Urban Heights",
+        location: "Maninagar, South Ahmedabad",
+        price: "₹22,000",
+        bhk: "2",
+        beds: "2",
+        baths: "2",
+        category: "Middle",
+        image: "../images/properties/property-06.jpg",
+        description: "A comfortable city apartment designed for convenient family living with essential facilities.",
+        facilities: ["Parking", "Lift", "Security", "Balcony"]
+    },
+
+    "07": {
+        type: "Duplex",
+        title: "Luxury Duplex Residence",
+        name: "Kankaria Royal Haven",
+        location: "Kankaria, South Ahmedabad",
+        price: "₹32,000",
+        bhk: "3",
+        beds: "3",
+        baths: "3",
+        category: "High",
+        image: "../images/properties/property-07.jpg",
+        description: "A luxury two-level residence offering spacious rooms and premium family living facilities.",
+        facilities: ["Parking", "Garden", "Balcony", "Security", "Two Floors"]
+    },
+
+    "08": {
+        type: "Tenement",
+        title: "Budget Family Home",
+        name: "Narol Harmony Homes",
+        location: "Narol, South Ahmedabad",
+        price: "₹17,000",
+        bhk: "2",
+        beds: "2",
+        baths: "1",
+        category: "Budget",
+        image: "../images/properties/property-08.jpg",
+        description: "A budget-friendly independent home suitable for a small family.",
+        facilities: ["Parking", "Water Supply", "Independent Home"]
+    },
+
+    "09": {
+        type: "Room",
+        title: "Affordable Rental Room",
+        name: "Lambha Cozy Corner",
+        location: "Lambha, South Ahmedabad",
+        price: "₹9,500",
+        bhk: "1",
+        beds: "1",
+        baths: "1",
+        category: "Budget",
+        image: "../images/properties/property-09.jpg",
+        description: "A simple and affordable private rental room with essential accommodation facilities.",
+        facilities: ["Private Room", "Bathroom", "Water Supply"]
+    },
+
+    "10": {
+        type: "Triplex",
+        title: "Luxury Triplex ",
+        name: "Ishanpur Grand Vista",
+        location: "Ishanpur, South Ahmedabad",
+        price: "₹40,000",
+        bhk: "4",
+        beds: "4",
+        baths: "4",
+        category: "High",
+        image: "../images/properties/property-10.jpg",
+        description: "A premium three-level villa designed for spacious family living with multiple floors and modern facilities.",
+        facilities: ["Parking", "Garden", "Balcony", "Security", "Three Floors"]
+    },
+
+    "11": {
+        type: "Apartment",
+        title: "Luxury City Apartment",
+        name: "Satellite Luxe Heights",
+        location: "Satellite, West Ahmedabad",
+        price: "₹32,000",
+        bhk: "3",
+        beds: "3",
+        baths: "2",
+        category: "High",
+        image: "../images/properties/property-11.jpg",
+        description: "A luxury city apartment offering comfortable family spaces and premium residential facilities.",
+        facilities: ["Parking", "Lift", "Security", "Balcony", "Power Backup"]
+    },
+
+    "12": {
+        type: "Duplex",
+        title: "Elegant Luxury Duplex",
+        name: "Vastrapur Elegant Haven",
+        location: "Vastrapur, West Ahmedabad",
+        price: "₹35,000",
+        bhk: "3",
+        beds: "3",
+        baths: "3",
+        category: "High",
+        image: "../images/properties/property-12.jpg",
+        description: "An elegant two-level duplex home with spacious interiors and premium residential features.",
+        facilities: ["Parking", "Garden", "Balcony", "Security", "Two Floors"]
+    },
+
+    "13": {
+        type: "Apartment",
+        title: "Premium Residence Apartment",
+        name: "Prahladnagar Prestige Heights",
+        location: "Prahladnagar, West Ahmedabad",
+        price: "₹29,000",
+        bhk: "3",
+        beds: "3",
+        baths: "3",
+        category: "High",
+        image: "../images/properties/property-13.jpg",
+        description: "A premium apartment offering spacious family accommodation and modern lifestyle facilities.",
+        facilities: ["Parking", "Lift", "Security", "Balcony", "Power Backup"]
+    },
+
+    "14": {
+        type: "Triplex",
+        title: "Grand Luxury Triplex",
+        name: "Thaltej Grand Royale",
+        location: "Thaltej, West Ahmedabad",
+        price: "₹46,000",
+        bhk: "4",
+        beds: "4",
+        baths: "4",
+        category: "Luxury",
+        image: "../images/properties/property-14.jpg",
+        description: "A grand three-level luxury residence designed for families looking for spacious and premium living.",
+        facilities: ["Large Parking", "Garden", "Balconies", "Security", "Three Floors"]
+    },
+
+    "15": {
+        type: "Tenement",
+        title: "Modern Family Tenement",
+        name: "Bopal Green Vista",
+        location: "Bopal, West Ahmedabad",
+        price: "₹25,000",
+        bhk: "2",
+        beds: "2",
+        baths: "2",
+        category: "Middle",
+        image: "../images/properties/property-15.jpg",
+        description: "A modern independent family home with practical living spaces and essential facilities.",
+        facilities: ["Parking", "Water Supply", "Garden", "Independent Home"]
+    },
+
+    "16": {
+        type: "Room",
+        title: "Student Friendly Room",
+        name: "Navrangpura Urban Nest",
+        location: "Navrangpura, West Ahmedabad",
+        price: "₹9,000",
+        bhk: "1",
+        beds: "1",
+        baths: "1",
+        category: "Budget",
+        image: "../images/properties/property-16.jpg",
+        description: "A convenient private rental room suitable for students and working individuals.",
+        facilities: ["Private Room", "Bathroom", "Water Supply", "City Connectivity"]
+    },
+
+    "17": {
+        type: "Apartment",
+        title: "Premium Smart Apartment",
+        name: "Science City Smart Heights",
+        location: "Science City, West Ahmedabad",
+        price: "₹29,000",
+        bhk: "3",
+        beds: "3",
+        baths: "2",
+        category: "High",
+        image: "../images/properties/property-17.jpg",
+        description: "A premium modern apartment offering comfortable family living and smart residential features.",
+        facilities: ["Parking", "Lift", "Security", "Balcony", "Smart Features"]
+    },
+
+    "18": {
+        type: "Apartment",
+        title: "Affordable Family Apartment",
+        name: "Naroda Harmony Residency",
+        location: "Naroda, East Ahmedabad",
+        price: "₹14,000",
+        bhk: "2",
+        beds: "2",
+        baths: "2",
+        category: "Middle",
+        image: "../images/properties/property-18.jpg",
+        description: "An affordable family apartment with a practical layout and essential facilities.",
+        facilities: ["Parking", "Lift", "Security", "Water Supply"]
+    },
+
+    "19": {
+        type: "Duplex",
+        title: "Spacious Duplex Home",
+        name: "Nikol Grand Duplex",
+        location: "Nikol, East Ahmedabad",
+        price: "₹22,000",
+        bhk: "3",
+        beds: "3",
+        baths: "3",
+        category: "Middle",
+        image: "../images/properties/property-19.jpg",
+        description: "A spacious two-level family duplex with comfortable rooms and useful residential facilities.",
+        facilities: ["Parking", "Balcony", "Garden", "Two Floors"]
+    },
+
+    "20": {
+        type: "Tenement",
+        title: "Budget Friendly Tenement",
+        name: "Vastral Harmony Enclave",
+        location: "Vastral, East Ahmedabad",
+        price: "₹16,000",
+        bhk: "2",
+        beds: "2",
+        baths: "1",
+        category: "Middle",
+        image: "../images/properties/property-20.jpg",
+        description: "A practical independent tenement suitable for comfortable family living.",
+        facilities: ["Parking", "Water Supply", "Independent Home"]
+    },
+
+    "21": {
+        type: "Room",
+        title: "Simple Rental Room",
+        name: "Odhav Cozy Haven",
+        location: "Odhav, East Ahmedabad",
+        price: "₹6,000",
+        bhk: "1",
+        beds: "1",
+        baths: "1",
+        category: "Budget",
+        image: "../images/properties/property-21.jpg",
+        description: "A simple and affordable private rental room with basic accommodation facilities.",
+        facilities: ["Private Room", "Bathroom", "Water Supply"]
+    },
+
+    "22": {
+        type: "Triplex",
+        title: "Premium Family Triplex",
+        name: "Bapunagar Royal Vista",
+        location: "Bapunagar, East Ahmedabad",
+        price: "₹38,000",
+        bhk: "4",
+        beds: "4",
+        baths: "3",
+        category: "High",
+        image: "../images/properties/property-22.jpg",
+        description: "A premium three-level family residence with spacious accommodation and modern features.",
+        facilities: ["Parking", "Garden", "Balcony", "Security", "Three Floors"]
+    },
+
+    "23": {
+        type: "Apartment",
+        title: "Modern Residential Apartment",
+        name: "Viratnagar Modern Heights",
+        location: "Viratnagar, East Ahmedabad",
+        price: "₹22,000",
+        bhk: "2",
+        beds: "2",
+        baths: "2",
+        category: "Middle",
+        image: "../images/properties/property-23.jpg",
+        description: "A modern residential apartment designed for convenient family living.",
+        facilities: ["Parking", "Lift", "Security", "Balcony"]
+    },
+
+    "24": {
+        type: "Room",
+        title: "Affordable City Room",
+        name: "Kalupur City Nest",
+        location: "Kalupur, Central Ahmedabad",
+        price: "₹12,500",
+        bhk: "1",
+        beds: "1",
+        baths: "1",
+        category: "Budget",
+        image: "../images/properties/property-24.jpg",
+        description: "An affordable city room suitable for individuals looking for convenient accommodation.",
+        facilities: ["Private Room", "Bathroom", "Water Supply"]
+    },
+
+    "25": {
+        type: "Apartment",
+        title: "Central City Apartment",
+        name: "Lal Darwaja Central Vista",
+        location: "Lal Darwaja, Central Ahmedabad",
+        price: "₹19,000",
+        bhk: "2",
+        beds: "2",
+        baths: "1",
+        category: "Middle",
+        image: "../images/properties/property-25.jpg",
+        description: "A centrally located family apartment with practical living space and essential facilities.",
+        facilities: ["Parking", "Security", "Lift", "City Connectivity"]
+    },
+
+    "26": {
+        type: "Tenement",
+        title: "Comfortable Family Home",
+        name: "Raipur Heritage Haven",
+        location: "Raipur, Central Ahmedabad",
+        price: "₹15,000",
+        bhk: "2",
+        beds: "2",
+        baths: "2",
+        category: "Middle",
+        image: "../images/properties/property-26.jpg",
+        description: "A comfortable independent family home with useful residential facilities.",
+        facilities: ["Parking", "Water Supply", "Independent Home"]
+    },
+
+    "27": {
+        type: "Duplex",
+        title: "Classic Modern Duplex",
+        name: "Khanpur Classic Royale",
+        location: "Khanpur, Central Ahmedabad",
+        price: "₹28,000",
+        bhk: "3",
+        beds: "3",
+        baths: "2",
+        category: "High",
+        image: "../images/properties/property-27.jpg",
+        description: "A classic modern two-level duplex designed for comfortable family living.",
+        facilities: ["Parking", "Balcony", "Garden", "Two Floors"]
+    },
+
+    "28": {
+        type: "Room",
+        title: "Convenient City Room",
+        name: "Teen Darwaja Urban Nest",
+        location: "Teen Darwaja, Central Ahmedabad",
+        price: "₹9,800",
+        bhk: "1",
+        beds: "1",
+        baths: "1",
+        category: "Budget",
+        image: "../images/properties/property-28.jpg",
+        description: "A convenient private rental room suitable for affordable city accommodation.",
+        facilities: ["Private Room", "Bathroom", "Water Supply", "City Connectivity"]
+    },
+
+    "29": {
+        type: "Triplex",
+        title: "Royal Family Triplex",
+        name: "Shahibaug Royal Vista",
+        location: "Shahibaug, North Ahmedabad",
+        price: "₹41,000",
+        bhk: "4",
+        beds: "4",
+        baths: "4",
+        category: "Luxury",
+        image: "../images/properties/property-29.jpg",
+        description: "A royal three-level family residence offering spacious living areas and premium facilities.",
+        facilities: ["Large Parking", "Garden", "Balconies", "Security", "Three Floors"]
+    },
+
+    "30": {
+        type: "Apartment",
+        title: "Modern Budget Apartment",
+        name: "Jamalpur Urban Heights",
+        location: "Jamalpur, South Ahmedabad",
+        price: "₹26,000",
+        bhk: "2",
+        beds: "2",
+        baths: "1",
+        category: "Middle",
+        image: "../images/properties/property-30.jpg",
+        description: "A modern budget-friendly apartment suitable for comfortable family living.",
+        facilities: ["Parking", "Security", "Lift", "Water Supply"]
+    },
+
+    "31": {
+        type: "Tenement",
+        title: "Independent Family Home",
+        name: "Gota Green Enclave",
+        location: "Gota, West Ahmedabad",
+        price: "₹20,500",
+        bhk: "2",
+        beds: "2",
+        baths: "2",
+        category: "Middle",
+        image: "../images/properties/property-31.jpg",
+        description: "An independent family home with practical spaces and useful everyday facilities.",
+        facilities: ["Parking", "Water Supply", "Garden", "Independent Home"]
+    },
+
+    "32": {
+        type: "Duplex",
+        title: "Spacious Modern Duplex",
+        name: "Thakkarnagar Grand Duplex",
+        location: "Thakkarnagar, East Ahmedabad",
+        price: "₹24,000",
+        bhk: "3",
+        beds: "3",
+        baths: "2",
+        category: "Middle",
+        image: "../images/properties/property-32.jpg",
+        description: "A spacious modern two-level duplex offering comfortable family accommodation.",
+        facilities: ["Parking", "Balcony", "Garden", "Two Floors"]
+    },
+
+    "33": {
+        type: "Apartment",
+        title: "Contemporary Family Apartment",
+        name: "South Bopal Elite Heights",
+        location: "South Bopal, West Ahmedabad",
+        price: "₹23,000",
+        bhk: "3",
+        beds: "3",
+        baths: "2",
+        category: "Middle",
+        image: "../images/properties/property-33.jpg",
+        description: "A contemporary apartment designed for modern family living with comfortable spaces.",
+        facilities: ["Parking", "Lift", "Security", "Balcony"]
+    },
+
+    "34": {
+        type: "Tenement",
+        title: "Affordable Independent Home",
+        name: "Nava Vadaj Harmony Homes",
+        location: "Nava Vadaj, North Ahmedabad",
+        price: "₹22,850",
+        bhk: "2",
+        beds: "2",
+        baths: "1",
+        category: "Middle",
+        image: "../images/properties/property-34.jpg",
+        description: "An affordable independent family home with practical living space.",
+        facilities: ["Parking", "Water Supply", "Independent Home"]
+    },
+
+    "35": {
+        type: "Room",
+        title: "Comfortable Private Room",
+        name: "Behrampura Cozy Residency",
+        location: "Behrampura, South Ahmedabad",
+        price: "₹9,500",
+        bhk: "1",
+        beds: "1",
+        baths: "1",
+        category: "Budget",
+        image: "../images/properties/property-35.jpg",
+        description: "A comfortable private rental room offering basic facilities at an affordable price.",
+        facilities: ["Private Room", "Bathroom", "Water Supply"]
+    }
+
+};
+
+
+const params = new URLSearchParams(window.location.search);
+
+const id = params.get("id");
+
+const property = properties[id];
+
+
+if (property) {
+
+    document.title = property.title + " | Property Paradise";
+
+    document.getElementById("propertyImage").src = property.image;
+
+    document.getElementById("propertyImage").alt = property.title;
+
+    document.getElementById("propertyType").textContent = property.type;
+
+    document.getElementById("propertyTitle").textContent = property.name;
+
+    document.getElementById("propertyLocation").textContent =
+        "📍 " + property.location;
+
+    document.getElementById("propertyPrice").innerHTML =
+        property.price + ' <small>/ Month</small>';
+
+    document.getElementById("propertyBHK").textContent =
+        property.bhk;
+
+    document.getElementById("propertyBeds").textContent =
+        property.beds;
+
+    document.getElementById("propertyBaths").textContent =
+        property.baths;
+
+    document.getElementById("propertyClass").textContent =
+        property.category;
+
+    document.getElementById("propertyDescription").textContent =
+        property.description;
+
+    const facilityList =
+        document.getElementById("facilityList");
+
+    property.facilities.forEach(function(facility) {
+
+        const span = document.createElement("span");
+
+        span.textContent = facility;
+
+        facilityList.appendChild(span);
+
+    });
+
+} else {
+
+    document.querySelector(".details-card").innerHTML = `
+        <div style="padding:50px;text-align:center;">
+            <h1>Property Not Found</h1>
+            <p style="margin:15px 0;color:#777;">
+                The selected property could not be found.
+            </p>
+            <a href="../index.html"
+               class="back-button">
+               Back to Home
+            </a>
+        </div>
+    `;
+
+}
+
+</script>
+
+</body>
+</html>
